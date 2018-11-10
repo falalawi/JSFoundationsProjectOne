@@ -10,7 +10,15 @@
  *
  */
 function filterEvens(numbers) {
-	// your code goes here!
+// const numbers = ([1,2,3,4,5])
+let evens = []
+for (let i=0; i<numbers.length; i++)
+if (i%2 === 0) {
+	return evens
+} else {
+	return ''
+}
+console.log(evens)
 }
 
 /**
@@ -25,8 +33,16 @@ function filterEvens(numbers) {
  *
  */
 function filterOdds(numbers) {
-	// your code goes here!
-}
+// const numbers = ([1,2,3,4,5])
+	let odds=[]	
+	for (let i=0; i<numbers.length; i++)
+		if (i%2 !== 0) {
+			return odds
+		} else {
+			return ''
+		}
+		console.log(odds)
+		}
 
 /**
  * Receives an array of numbers
@@ -39,8 +55,13 @@ function filterOdds(numbers) {
  *
  */
 function sumOdds(numbers) {
-	// your code goes here!
+let sumOdds=0
+	for (let i=0; i<odds.length; i++) {
+	sumOdds+odds[i];
+} 
+console.length(sumOdds)
 }
+
 
 /**
  * Receives an array of names
@@ -59,8 +80,16 @@ function sumOdds(numbers) {
  * 
  */
 function makePairs(names) {
-	// your code goes here!
-}
+	let pairs = []
+	for (let i=0; i<instructors.length; i+=2) {
+		if (instructors[i+1] !==undefined) {
+			pairs.push([instructors[i]+instructors[i+1]])
+			} else {
+				pairs.push(instructors[i]);
+			}
+		}
+		return pairs
+	}
 
 /**************************************************
 The following code runs the functions defined above
@@ -69,9 +98,9 @@ let numbers = [153,67,9,34,7,67,342,7,34,8656,2,124,5,43];
 let instructors = ["Hamza", "Mshary", "Aziz", "Hussein", "Fawaz"];
 
 // uncomment the following lines to run and test your code.
-// // filterEvens
-// evens = filterEvens(numbers);
-// console.log(evens);
+filterEvens
+evens = filterEvens(numbers);
+console.log(evens);
 
 // // sumOdds
 // sum = sumOdds(numbers);
